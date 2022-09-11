@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/88ef4ad549.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>DogCupid</title>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item"><img src="./dogs.jpg" alt="" /></div>
+      <div class="flex-item">
+        <div>
+          <h1>DogCupid</h1>
+          <form action="">
+            <!-- <label for="username">Username</label> -->
+            <input type="text" placeholder="Username" id="username" />
+            <br />
+            <!-- <label for="password">Password</label> -->
+            <input type="text" placeholder="Password" id="password" />
+            <br />
+            <input type="button" value="Login" id="submit" onclick="login()" />
+            <br />
+          </form>
+          <br />
+          <br />
+          <br />
+          <div id="register">
+            Dont have an account?
+            <span><a href="./register.html">Register</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function login() {
+        window.location.href = "./home.html";
+      }
+    </script>
+  </body>
+</html>
