@@ -22,7 +22,7 @@
             <br />
             <input type="text" placeholder="Password" id="password" />
             <br />
-            <input type="button" value="Login" id="submit" onclick="login()" />
+            <input type="button" value="Admin Login" id="submit" onclick="login()" />
             <br />
           </form>
           <br />
@@ -33,9 +33,7 @@
             <button id="adminlogin" onclick="register()">Register</button>
           </div>
           <div>
-            <button id="adminlogin" onclick="adminlogin()">Admin Login</button>
-          </div>
-        </div>
+            <button id="adminlogin" onclick="userlogin()">User Login</button>
       </div>
     </div>
 
@@ -46,8 +44,8 @@
       function register() {
         window.location.href = "./register.html";
       }
-      function adminlogin() {
-        window.location.href = "./adminlogin.html";
+      function userlogin() {
+        window.location.href = "./index.html";
       }
     </script>
   </body>
